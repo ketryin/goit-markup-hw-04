@@ -112,7 +112,8 @@ img {
   margin-right: 50px;
 }
 .nav-list-items .link:hover,
-.nav-list-items .link:active{
+.nav-list-items .link:active,
+.nav-list-items .link:focus{
   color: var(--accent-color);
 }
 .nav-list-items .indicator-page{
@@ -129,9 +130,10 @@ img {
   margin-right: 50px;
 }
 .header-address-link:hover,
-.header-address-link:active{
+.header-address-link:active,
+.header-address-link:focus{
   color: var(--accent-color);
-}
+} 
 .address-icon-mail{
   margin-right: 10px;
   width: 16px;
@@ -145,11 +147,13 @@ img {
   color: var(--description);
 }
 .header-address-link:hover,
-.header-address-link:active .address-icon-mail{
+.header-address-link:active,
+.header-address-link:focus .address-icon-mail{
   fill: var(--accent-color);
 }
 .header-address-link:hover,
-.header-address-link:active address-icon-phone{
+.header-address-link:active,
+.header-address-link:focus .address-icon-phone{
   fill: var(--accent-color);
 }
 /* === END HEADER === */
@@ -160,7 +164,6 @@ img {
   padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
-.
 .footer .container .logo-link{
   margin-right: 0;
 }
@@ -203,10 +206,14 @@ color:var(--description-dark-theme-color);
 .social-list-svg {
   fill: #ffffff;
 }
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color:var(--accent-color);
 }
 .social-list-link:hover .social-list-svg {
+  fill: #ffffff;
+}
+.social-list-link:focus .social-list-svg{
   fill: #ffffff;
 }
 .container-social-link .social-list-item:not(:last-child){
@@ -384,12 +391,6 @@ color:var(--description-dark-theme-color);
 .social-list-link {
   background-color: #ffffff;
 }
-.social-list-link:hover {
-  background-color:var(--accent-color);
-}
-.social-list-link:hover .social-list-svg {
-  fill: #ffffff;
-}
 .social-list-svg {
   fill: #AFB1B8;
 }
@@ -417,10 +418,14 @@ color:var(--description-dark-theme-color);
 .clients-list-icon{
   fill: #AFB1B8;
 }
-.clients-list-item:hover {
+.clients-list-item:hover,
+.clients-list-item:focus {
   border: 1px solid var(--accent-color);
 }
 .clients-list-item:hover .clients-list-icon{
+  fill:var(--accent-color);
+}
+.clients-list-item:focus .clients-list-icon{
   fill:var(--accent-color);
 }
 
@@ -454,7 +459,9 @@ color:var(--description-dark-theme-color);
   color: var(--subtitle);
   background-color: var(--background-button);
 }
-.portfolio-button:hover, .portfolio-button:active{
+.portfolio-button:hover, 
+.portfolio-button:active,
+.portfolio-button:focus{
   color: var(--description-dark-theme-color);
   background-color: var(--accent-color);
 }
