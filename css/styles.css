@@ -216,7 +216,7 @@ color:var(--description-dark-theme-color);
 .social-list-link:focus .social-list-svg{
   fill: #ffffff;
 }
-.container-social-link .social-list-item:not(:last-child){
+.social-list-item:not(:last-child){
   margin-right: 10px;
 }
 /* === END FOOTER === */
@@ -409,6 +409,12 @@ color:var(--description-dark-theme-color);
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+.clients-list-item .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
@@ -418,16 +424,22 @@ color:var(--description-dark-theme-color);
 .clients-list-icon{
   fill: #AFB1B8;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients-list-item:hover .link{
   border: 1px solid var(--accent-color);
 }
-.clients-list-item:hover .clients-list-icon{
+.clients-list-item:hover .clients-list-icon
+{
+  fill:var(--accent-color);
+} 
+.clients-list-item .link:focus .clients-list-icon{
   fill:var(--accent-color);
 }
-.clients-list-item:focus .clients-list-icon{
-  fill:var(--accent-color);
+.clients-list-item:focus .link{
+  border: 1px solid var(--accent-color);
 }
+
+
+
 
 /* === END CLIENTS === */
 /* ========== END MAIN PAGE ========== */
